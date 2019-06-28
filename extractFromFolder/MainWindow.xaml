@@ -33,6 +33,11 @@
             <TextBox x:Name="txtbk_output" HorizontalAlignment="Right" Height="120" TextWrapping="Wrap" Text="File output path not selected." VerticalAlignment="Bottom" Width="473" RenderTransformOrigin="0.472,0.64" FontSize="24" IsReadOnly="True"/>
         </Grid>
         <TextBox x:Name="txtbk_result" Height="120" Margin="10,0,0,10" TextWrapping="Wrap" VerticalAlignment="Bottom" RenderTransformOrigin="0.472,0.64" Grid.Row="2" FontSize="24" HorizontalAlignment="Left" Width="471" IsReadOnly="True" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="txtblk_reqhyplink" Grid.Column="2" HorizontalAlignment="Left" Margin="147.2,119,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10">
+        <Hyperlink Click="Hyperlink_OnClick">
+           Project's Repository| MIT License
+        </Hyperlink>
+        </TextBlock>
 
     </Grid>
 </Window>

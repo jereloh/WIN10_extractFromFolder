@@ -82,21 +82,28 @@ namespace extractFromFolder
                         string filename = System.IO.Path.GetFileName(file);
                         string pathNamewFile = System.IO.Path.Combine(txtbk_output.Text, filename);
                         //Console.WriteLine(pathNamewFile);
-                        File.Copy(file, pathNamewFile,true);
+                        File.Copy(file, pathNamewFile, true);
                     }
 
                     // Completed converting
                     txtbk_result.Text = txtbk_input.Text + " extracted to: " + txtbk_output.Text;
                     MessageBox.Show("Files extracted!", "Complete");
                 }
-                catch {
+                catch
+                {
                     MessageBox.Show("Something went wrong!", "Error");
                 }
 
             }
-            else {
+            else
+            {
                 txtbk_result.Text = "No input/output selected!";
             }
+        }
+        private void Hyperlink_OnClick(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/xjer/WIN10_extractFromFolder");
+
         }
     }
 }
