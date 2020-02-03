@@ -7,7 +7,7 @@ Use at your own risk.
 
 MIT License
 
-Copyright (c) 2019 xfler
+Copyright (c) 2019 xJer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
